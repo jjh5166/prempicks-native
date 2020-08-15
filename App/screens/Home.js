@@ -1,5 +1,5 @@
 import React from 'react'
-import { SafeAreaView, Text, StyleSheet, ImageBackground } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, ImageBackground, StatusBar } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,6 +27,7 @@ export default () => {
 
   return(
     <ImageBackground source={require('../assets/blur.jpg')} style={styles.backgroundImage}>
+      <StatusBar translucent={false} barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
         <Text style={styles.title}>Prem Picks</Text>
       </SafeAreaView>
