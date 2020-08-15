@@ -13,10 +13,13 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#1f9ac0',
-    fontFamily: 'Kanit_400Regular_Italic',
-    fontSize: 70,
+    fontFamily: 'Kanit_900Black_Italic',
+    fontSize: 90,
+    textAlign: 'center',
+    fontWeight: '500',
     textShadowColor: '#00394d',
-    textShadowOffset: { width: 2, height: 2 }
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 1
   }
 });
 
@@ -25,7 +28,7 @@ export default () => {
   return(
     <ImageBackground source={require('../assets/blur.jpg')} style={styles.backgroundImage}>
       <SafeAreaView style={styles.container}>
-        <Text style={styles.title}>PremPicks</Text>
+        <Text style={styles.title}>Prem Picks</Text>
       </SafeAreaView>
     </ImageBackground>
   )

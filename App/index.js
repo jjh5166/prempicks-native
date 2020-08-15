@@ -3,7 +3,7 @@ import { AppLoading } from "expo";
 import {
   useFonts,
   Kanit_400Regular,
-  Kanit_400Regular_Italic
+  Kanit_900Black_Italic
 } from "@expo-google-fonts/kanit";
 
 import Home from './screens/Home';
@@ -11,7 +11,7 @@ import Home from './screens/Home';
 export default () => {
   let [fontsLoaded] = useFonts({
     Kanit_400Regular,
-    Kanit_400Regular_Italic
+    Kanit_900Black_Italic
   });
   if (!fontsLoaded) {
     return <AppLoading />;
